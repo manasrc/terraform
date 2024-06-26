@@ -7,7 +7,6 @@ resource "digitalocean_kubernetes_cluster" "development" {
   auto_upgrade         = true
   registry_integration = true
 
-
   version = "1.30.1-do.0"
 
   node_pool {
