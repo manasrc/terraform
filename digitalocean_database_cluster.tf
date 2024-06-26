@@ -11,4 +11,9 @@ resource "digitalocean_database_cluster" "development" {
   size             = "db-intel-1vcpu-1gb"
   node_count       = 1
   storage_size_mib = 20480
+
+  maintenance_window {
+    day  = "sunday"
+    hour = "00:00"
+  }
 }
